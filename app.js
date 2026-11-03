@@ -1,1 +1,3 @@
-console.log('Cozy Cafe JavaScript is connected!');
+const mainTitelEl = document.querySelector('#main-title')
+mainTitelEl.textContent = "Welcome to the Cozy Cafe."
+console.dir(mainTitelEl)
