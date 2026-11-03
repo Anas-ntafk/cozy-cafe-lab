@@ -10,5 +10,10 @@ highlightTitleEls.forEach((highlightTitleEl) => {
 
 const quoteOfTheDay = document.querySelector('#quote-of-the-day')
 quoteOfTheDay.textContent = 'A little coffee, a little conversation.'
-console.log(quoteOfTheDay)
+// console.log(quoteOfTheDay)
 quoteOfTheDay.classList.add('featured')
+
+const mainPhotoEl = document.querySelector('#main-photo')
+// console.log(mainPhotoEl.getAttribute('src'))
+mainPhotoEl.setAttribute('src', './assets/berry-cake.jpg')
+mainPhotoEl.setAttribute('alt', 'A berry cake served at the cafe')
