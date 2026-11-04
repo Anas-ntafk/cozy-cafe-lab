@@ -17,3 +17,14 @@ const mainPhotoEl = document.querySelector('#main-photo')
 // console.log(mainPhotoEl.getAttribute('src'))
 mainPhotoEl.setAttribute('src', './assets/berry-cake.jpg')
 mainPhotoEl.setAttribute('alt', 'A berry cake served at the cafe')
+
+const bgColorBtnEl = document.querySelector('#bg-color-btn')
+// console.log(bgColorBtnEl)
+const bodyEl = document.querySelector('body')
+const handleBackgroundChange = () => {
+    bodyEl.style.backgroundColor = 'lightsteelblue'
+}
+bgColorBtnEl.addEventListener('click' ,handleBackgroundChange)
+
+console.log('Cozy Cafe JavaScript is connected!');
+
