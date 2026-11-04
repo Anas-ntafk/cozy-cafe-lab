@@ -30,4 +30,28 @@ const handleBackgroundChange = () => {
 }
 bgColorBtnEl.addEventListener('click' ,handleBackgroundChange)
 
+//PART 5
+const roseLatteEl = document.querySelector('#rose-latte')
+const PistachioEl = document.querySelector('#croissant')
+const cheesecakeEl = document.querySelector('#cheesecake')
+
+const roseBtnEl = document.getElementById('0')
+const pistachioBtnEl = document.getElementById('1')
+const cheesecakeBtnEl = document.getElementById('2')
+
+roseLatteEl.textContent = 'Available'
+PistachioEl.textContent = 'Sold Out'
+cheesecakeEl.textContent = 'Available'
+
+roseBtnEl.addEventListener('click', () => {
+    roseLatteEl.textContent = 'Sold Out'
+})
+pistachioBtnEl.addEventListener('click', () => {
+    PistachioEl.textContent = 'Sold Out'
+})
+cheesecakeBtnEl.addEventListener('click', () => {
+    cheesecakeEl.textContent = 'Sold Out'
+})
+
+
 console.log('Cozy Cafe JavaScript is connected!');
